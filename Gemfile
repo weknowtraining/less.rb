@@ -7,5 +7,5 @@ gem "therubyrhino", ">= 2.0.2",  :require => nil, :platforms => :jruby
 
 group :development do
   gem "rake", :require => nil
-  gem "rspec", "~> 2.0"
+  gem "rspec"
 end
