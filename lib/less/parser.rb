@@ -61,7 +61,7 @@ module Less
     def parse(less)
       error, tree = nil, nil
       Less::JavaScript.exec do
-        @parser.parse(less, lambda { |*args| # (error, tree)
+        @parser.parse(less.to_s, lambda { |*args| # (error, tree)
           # v8 >= 0.10 passes this as first arg :
           if args.size > 2
             error, tree = args[-2], args[-1]
